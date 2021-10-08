@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="4.74">
+ <testsuite name="user searches titles." timestamp="2021-10-08T18:49:36" hostname="localhost" time="4.74" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="user searches titles." name="popup displays titles." time="4.733">
+   <failure type="toBeTruthy" message="Expected false to be truthy."><![CDATA[Error: Expected false to be truthy.
+    at <Jasmine>
+    at UserContext.<anonymous> (C:\Users\m.kuznetsov\Desktop\projects\learnin\zypher-integration\src\test\userSearchesTitles.js:41:9)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

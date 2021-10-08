@@ -1,0 +1,20 @@
+{
+  "name": "zephyr-integration",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine --config=./tools/jasmine.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.9.0",
+    "selenium-webdriver": "^4.0.0-rc-2",
+    "zapi_nodejs": "^1.0.8"
+  },
+  "devDependencies": {
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-reporters": "^2.5.0"
+  }
+}
