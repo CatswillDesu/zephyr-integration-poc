@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.22.0",
+    "btoa": "^1.2.1",
     "jasmine": "^3.9.0",
     "selenium-webdriver": "^4.0.0-rc-2",
+    "xml-js": "^1.6.11",
     "zapi_nodejs": "^1.0.8"
   },
   "devDependencies": {
