@@ -1,6 +1,6 @@
-# Prerequsites to make project up and running:
+# Prerequisites to make project up and running:
 
-## Fill in .env vraiables with your own data
+## Fill in .env variables with your own data
 
 - Create new .env file in project direcory folder and check .env.example
 
@@ -13,7 +13,7 @@
 
 - Create new test cycle you want automated tests to execute in.
 - Go to "/tools/tms-utils/cycle.js" file and replace PROJECT_ISSUE_KEY with any issue key of the project you want to integrate test executions to.
-- run "node ./tools/tms-utils/cycle.js" and you will see project cycle's in console logs.
+- run "node ./tools/tms-utils/cycle.js" command in terminal and you will see project cycle's data in console.
 - Pick cycle you need and place it's ID into DEMO_CYCLE_ID env variable.
 
 7. (NOT REQUIRED). To get TEST_DETAILS_FIELD_ID follow those steps:
@@ -24,4 +24,4 @@
 - You will see "customField" request item in network tab, open its conetnts and wou will find "id" property that you need.
 - Place it in .env TEST_DETAILS_FIELD_ID variable.
 
-### To link tests with your poject you need to create two issues with zephyr's "test" issue type and replace "tmsLink state field" in src/test/ files
+### To link tests with your poject you need to create two issues with zephyr's "test" issue type and replace "tmsLink" state field in "src/test/" test files
