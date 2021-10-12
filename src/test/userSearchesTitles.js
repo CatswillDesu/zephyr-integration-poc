@@ -1,8 +1,13 @@
 const driver = require('../webdriver');
 const { By, until } = require('selenium-webdriver');
 
-describe('user searches titles. TMS-LINK=ZT-1', () => {
+describe('user searches titles', () => {
   it('popup displays titles.', async () => {
+    expect.setState({
+      tmsLink: 'ZT-1',
+      failed: false
+    });
+
     try {
       await driver.get('https://one-weeb.herokuapp.com');
       const pageTitle = await driver.getTitle();
@@ -38,7 +43,17 @@ describe('user searches titles. TMS-LINK=ZT-1', () => {
       await closeButton.click();
       expect(
         await driver.isElementPresented(By.css('.search-popup-container'))
-      ).toBeTruthy();
+      ).toBeFalsy();
+
+      expect.setState({
+        failed: false
+      });
+    } catch (e) {
+      expect.setState({
+        failed: true,
+        errorMessage: e.message
+      });
+      throw e;
     } finally {
       await driver.close();
     }

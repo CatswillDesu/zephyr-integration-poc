@@ -1,0 +1,6 @@
+{
+  "rootDir": "..",
+  "setupFilesAfterEnv": ["./tools/hooks.js"],
+  "testMatch": ["**/test/*.js"],
+  "testTimeout": 25000
+}
