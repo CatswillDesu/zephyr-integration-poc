@@ -80,63 +80,6 @@ async function updateExecutionsCustomField(
   return response.data;
 }
 
-// (async () => {
-//   const {
-//     data: {
-//       id: issueId,
-//       fields: {
-//         project: { id: projectId }
-//       }
-//     }
-//   } = await getIssueByTmsLink('ZT-1');
-
-//   const { id: executionId } = await createExecution(
-//     issueId,
-//     projectId,
-//     DEMO_CYCLE_ID
-//   );
-
-//   const updateData = {
-//     status: {
-//       id: 2
-//     }
-//   };
-
-//   try {
-//     const execution = await updateExecutionsCustomField(
-//       executionId,
-//       EXECUTION_DETAILS_FIELD_ID,
-//       '432432ilkhmlkm fm lkgmkfdmg k lkmfpdmglfdg kfmgkdfglfd,gl;fd,'
-//     );
-//   } catch (e) {
-//     console.log(e);
-//   }
-//   const execution = await updateExecution(
-//     executionId,
-//     issueId,
-//     projectId,
-//     DEMO_CYCLE_ID,
-//     updateData
-//   );
-//   console.log(execution);
-// })();
-
-// (async () => {
-//   const route = '/cycles/search?projectId=10001&versionId=-1';
-//   const dToken = generateJwt('GET', route);
-//   try {
-//     const d = await axios.get(API_URL + route, {
-//       headers: {
-//         Authorization: 'JWT ' + dToken,
-//         zapiAccessKey: ACCESS_KEY
-//       }
-//     });
-//     console.log(d);
-//   } catch (e) {
-//     console.log(e);
-//   }
-// })();
-
 module.exports = {
   createExecution,
   updateExecution
